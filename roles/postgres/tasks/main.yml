@@ -47,6 +47,17 @@
     state: present
   notify: restart postgresql
 
+- name: Ensure postgresql config files
+  file:
+    src: "etc/postgresql/9.5/main/{{ item }}"
+    dest: "/etc/postgresql/9.5/main/{{ item }}"
+    owner: postgres
+    group: postgres
+    mode: 0644
+  with_items:
+    - postgresql.conf
+    - pg_hba.conf
+
 - name: Ensure backups dir
   file:
     path: /home/postgres/backups
