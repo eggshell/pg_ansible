@@ -1,5 +1,7 @@
 #!/bin/bash
 
+## script obtained from: https://wiki.postgresql.org/wiki/Automated_Backup_on_Linux
+
 ###########################
 ####### LOAD CONFIG #######
 ###########################
