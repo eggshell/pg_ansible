@@ -1,0 +1,5 @@
+[primary]
+prod-postgres-1.ibmesports.com
+
+[backup]
+prod-postgres-2.ibmesports.com
