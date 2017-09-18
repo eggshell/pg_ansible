@@ -5,14 +5,8 @@
     - role: common
       tags: ['common']
 
-- name: primary postgres hosts
-  hosts: primary
+- name: postgres host
+  hosts: postgres
   roles:
     - role: primary
-      tags: ['primary']
-
-- name: backup postgres hosts
-  hosts: backup
-  roles:
-    - role: backup
-      tags: ['backup']
+      tags: ['postgres']
